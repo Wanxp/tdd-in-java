@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'org.wanxp'
+version '1.0-SNAPSHOT'
+
+allprojects {
+    repositories {
+        maven {
+            url "https://maven.aliyun.com/nexus/content/groups/public"
+        }
+    }
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+test {
+    useJUnitPlatform()
+}

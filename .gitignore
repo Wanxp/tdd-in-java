@@ -1,0 +1,5 @@
+# Project exclude paths
+/.gradle/
+/spring-aop/build/
+/spring-aop/build/classes/java/main/
+/spring-aop/build/classes/java/test/
