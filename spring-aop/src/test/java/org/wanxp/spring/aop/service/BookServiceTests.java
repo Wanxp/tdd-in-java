@@ -40,9 +40,11 @@ import static org.mockito.Mockito.when;
  * 第三步 通过Spring注入对象 proxyBean
  *     @Autowired
  *     private BookService bookService;
- * 第四步
- *
- *
+ * 第四步 验证功能
+ * 反复调用        assertEquals(DUNE, bookService.getBookByName("Dune"));
+ * 验证调用一次 verify(mock).getBookByName("Dune");
+ *  这里验证mock方法后续都没调用过
+ *         verifyNoMoreInteractions(mock);
  *
  *
  *
